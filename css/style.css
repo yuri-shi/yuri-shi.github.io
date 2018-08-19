@@ -224,9 +224,9 @@ footer p {
 }
 
 .oneset {
-	margin: 0 auto;
+	margin: 40px auto;
 	width: 700px;
-	height: 300px;
+	height: auto;
 	background-color: none;
 	border-top: 2px dotted #c0c0c0;
 }
@@ -234,25 +234,31 @@ footer p {
 .screenshot {
 	float: left;
 	width: 400px;
-	height: 300px;
+	height: 240px;
 	background-color: none;
 }
 
 .description {
 	float: right;
 	width: 295px;
-	height: 250px;
+	min-height: 230px;
 	background-color: #bbdbf3;
+	padding-bottom: 1em;
 }
 
 .description h3 {
 	text-align: center;
 	line-height: 40px;
+	color: #383838;
 }
 
 .description p {
 	margin: 0 5px;
 	color: #696969;
+}
+
+.description a {
+	color: #383838;
 }
 
 .work1 {
