@@ -161,7 +161,7 @@ main{
 .detail-box {
 	display: none;
 	width: 640px;
-	height: 200px;
+	height: auto;
 	margin: 0 auto;
 	border: 3px solid #bbdbf3;
 	background-color: white;
