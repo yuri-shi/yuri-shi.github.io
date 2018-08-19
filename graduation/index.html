@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<link rel="stylesheet" href="css/skippr.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<link rel="stylesheet" href="CSS/meanmenu.css" media="all" />
+	<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+	<script src="js/script.js"></script>
+	<title>いろは料理教室</title>
+</head>
+
+<body>
+	<header>
+		<div class="header-content" id="top">
+			<div id="sp-menu">
+			</div>
+			<div class="logo-menu">
+				<img src="img/logo.png" alt="いろは料理教室">
+				<!--PC用メニュー-->
+				<nav class="nav">
+					<ul class="clearfix">
+						<li ><a href="#top">トップ</a></li>
+						<li><a href="https://www.google.co.jp/">プロフィール</a></li>
+						<li><a href="#course">レッスンのご案内</a></li>
+						<li><a href="#form">ご予約・お問い合わせ</a></li>
+						<li><a href="#access">アクセス</a></li>
+					</ul>
+				</nav>
+				<!-- SP用ハンバーガーアイコン用 -->
+				<nav class="sp-icon">
+					<span class="line"></span>
+				</nav>
+			</div>
+			
+		</div>
+	</header>
+	<main>
+		<div class="main-content">
+			<!--メイン写真～コンセプト説明-->
+			<div id="container">
+				<div id="theTarget">
+					<div style="background-image: url(img/main1.png);"></div>
+					<div style="background-image: url(img/main2.png);"></div>
+					<div style="background-image: url(img/main3.png);"></div>
+				</div>
+			</div>
+			<p>アットホームな雰囲気で、笑いの絶えない和やかなお料理教室です。<br>
+				家族や恋人が思わず笑顔になる料理を作れるようになりませんか？<br>
+				婚活中の方も、料理の腕を磨いて女子力アップしましょう。
+			</p>
+			
+			<!--見出し1　コースのご案内-->
+			<div>
+				<div class="title-h3">
+					<h3 id="course">コースのご案内</h3>
+				</div>
+				<div class="content clearfix">
+					<a href="https://www.google.co.jp/"><img src="img/shoshinsha.png" alt="初心者コース"></a>
+					<a href="https://www.google.co.jp/"><img src="img/katei.png" alt="家庭料理コース"></a>
+					<a href="https://www.google.co.jp/"><img src="img/party.png" alt="パーティーコース"></a>
+					<a href="https://www.google.co.jp/"><img src="img/taiken.png" alt="体験レッスン"></a>
+				</div>
+			</div>
+
+			<!--見出し2　ご予約・お問い合わせ-->
+			<div>
+				<div class="title-h3">
+					<h3 id="form">ご予約・お問い合わせ</h3>
+				</div>
+				<div class="content">
+					<form action="mail.php" method="post">
+						<div class="form-left">ご連絡内容</div>
+						<input type="radio" name="inquiry" value="体験レッスンのご予約">体験レッスンのご予約
+						<input type="radio" name="inquiry" value="お問い合わせ">お問い合わせ<br>
+						<div class="form-left">お名前</div>
+						<input type="text" name="sei" maxlength="15" placeholder="姓">
+						<input type="text" name="mei" maxlength="15" placeholder="名"><br>
+						<div class="form-left">お電話番号</div>
+						<input type="text" name="tel" maxlength="50" placeholder="例）03-××××-××××"><br>
+						<div class="form-left">メールアドレス</div>
+						<input type="text" name="mail" maxlength="50" placeholder="例）×××@○○○.com"><br>
+						<div class="form-left" style="vertical-align: top;">ご記入欄</div>
+						<textarea name="other" placeholder="例）○月×日△時からの体験レッスンを予約したいです。"></textarea><br>
+						<div class="button">
+						<input type="submit" value="送信">
+						<input type="reset" value="リセット">
+						</div>
+					</form>
+				</div>
+			</div>
+
+			<!--見出し3　アクセス-->
+			<div>
+				<div class="title-h3">
+					<h3 id="access">アクセス</h3>
+				</div>
+				<div class="content">
+					<table border="1" class="table">
+						<tbody>
+							<tr>
+								<th>教室名</th>
+								<td>いろは料理教室</td>
+							</tr>
+							<tr>
+								<th>住所</th>
+								<td>〒150-0044<br>
+									東京都渋谷区円山町20-1新大宗円山ビル11F</td>
+							</tr>
+							<tr>
+								<th>電話番号</th>
+								<td>03-6869-4700</td>
+							</tr>
+							<tr>
+								<th>アクセス情報</th>
+								<td>渋谷駅から道玄坂方面へ徒歩10分</td>
+							</tr>
+						</tbody>
+					</table>
+					<div class="ggmap">
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.839092916513!2d139.69277961488564!3d35.65633583020025!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188b55eab2b121%3A0xc556a2e9457ec8b6!2z44CSMTUwLTAwNDQg5p2x5Lqs6YO95riL6LC35Yy65YaG5bGx55S677yS77yQIOaWsOWkp-Wul-WGhuWxseODk-ODqw!5e0!3m2!1sja!2sjp!4v1482386545790" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+
+	<footer>
+		<div class="footer-content">
+			<nav class="nav2">
+				<ul class="clearfix">
+					<li id="top"><a href="#top">トップ</a></li>
+					<li><a href="https://www.google.co.jp/">プロフィール</a></li>
+					<li><a href="#course">レッスンのご案内</a></li>
+					<li><a href="#form">ご予約・お問い合わせ</a></li>
+					<li><a href="#access">アクセス</a></li>
+				</ul>
+			</nav>
+			<p>いろは料理教室©All Rights Reserved.</p>
+		</div>
+	</footer>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	<script src="js/skippr.min.js"></script>
+	
+	<script src="js/jquery.meanmenu.js"></script>
+	<script>
+	$(document).ready(function() {
+	$('nav').meanmenu();
+	});
+	</script>
+
+	
+
+</body>
+</html>
