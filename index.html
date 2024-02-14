@@ -3,13 +3,34 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1">
-	<meta name="description" content="Webデザイナーを目指しているYuriのポートフォリオサイトです。プロフィールや過去作品を掲載しています。">
+	<meta name="description" content="Webデザイナー・コーダーのケロラ由梨のポートフォリオサイトです。プロフィールや過去作品を掲載しています。">
 	<meta name="keyword" content="Webデザイン, ポートフォリオ, portfolio">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<title>Yuri's PORTFOLIO</title>
+
+	<!-- favicon -->
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+	<link rel="manifest" href="img/favicon/site.webmanifest">
+	<link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="theme-color" content="#ffffff">
+	<!-- favicon -->
+
+<!-- lightbox2 (lightbox.min.css)-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" integrity="sha512-ZKX+BvQihRJPA8CROKBhDNvoc2aDMOdAlcm7TUQY+35XYtrd3yh95QOOhsPDQY9QnKE0Wqag9y38OIgEvb88cA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+<!-- jQuery (jquery-X.X.X.min.js)-->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+<!-- lightbox2 (lightbox.min.js)-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js" integrity="sha512-k2GFCTbp9rQU412BStrcD/rlwv1PYec9SNrkbQlo6RZCf75l6KcC3UwDY8H5n5hl4v77IDtIPwOk9Dqjs/mMBQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+	<title>YURI KEROLA PORTFOLIO</title>
 </head>
 
 <body>
+	<!--
 	<div class="cover">
 		<div class="upper">
 			<div class="upper-title">
@@ -22,9 +43,12 @@
 			</div>
 		</div>
 	</div>
+-->
 
-	<div id="under-cover">
-		<header>
+	<!-- <div id="under-cover"> -->
+
+		<!-- for sp -->
+		<!-- <header>
 			<nav class="pc-headerNav clearfix" id="headerTop">
 				<ul class="clearfix">
 					<li id="TOP"><a href="#nosplash">&gt; TOP</a></li>
@@ -33,52 +57,92 @@
 					<li id="CONTACT">&gt; CONTACT</a></li>
 				</ul>
 			</nav>
-		</header>
+		</header> -->
+		<!-- for sp -->
 
 		<main>
-			<div class="title">
-				<img src="img/title.png">
-			</div>
-			<div class="content clearfix">
-				<div class="box" id="box-profile">
-					<h1>PROFILE</h1>
-				</div>
-				
-				<div class="box">
-					<h1><a href="work.html">WORK</a></h1>
-				</div>
-				
-				<div class="box" id="box-contact">
-					<h1>CONTACT</h1>
-				</div>
-				
-			</div>
+			<section class="sec-mv">
+				<img src="img/mv_240213.png" class="pc-show">
+				<img src="img/sp-mv_240213.png" class="sp-show">
+			</section>
+			<div class="nav">
+				    <ul>
+				        <li><a href="#work">WORK</a></li>
+				        <li><a href="#profile">PROFILE</a></li>
+				        <li><a href="#contact">CONTACT</a></li>
+				    </ul>
+				</div>	
 
-			<div class="detail-box" id="detail-box-profile">
-				<dl>
-					<dt>◆PROFILE</dt>
-					<dd>ケロラ　由梨 (Kerola Yuri)<br>
-					1987年生まれ。高校時代に趣味の延長でWebサイトを作ったことはあったが、結婚を機に一念発起でWebデザインの勉強を本格的に始める。2016年12月より1ヶ月間インフラトップ社のWebCampに通学し、HTML・CSS・jQueryを中心に、PhotoshopやJavaScriptも勉強。2017年3月より医療関係のホームページ制作会社にて、主にHTML・CSSを用いたホームページ更新のコーディング業務を行っている。</dd>
-					<dt>◆趣味</dt>
-					<dd>ジャズダンス・バレエ・旅行・スキー・スノーボード</dd>
-				</dl>
-			</div>
+			<section class="sec-body">
+			    <div class="container">	
+			        <h2 id="work">WORK</h2>
+			        <div class="work-wrap">
+				    	<div class="work-box">
 
-			<div class="detail-box" id="detail-box-contact">
-				<dl>
-					<dt>◆CONTACT</dt>
-					<dd>ご連絡は下記メールアドレスにお送りください。<br><br>yurishi.design@gmail.com</dd>
-				</dl>
-			</div>
+				    		 <a href="https://lp-shikinplus.bizforward.co.jp/" target="_blank">
+					            <img src="img/work/work_tmb_shikinplus.png" alt="SHIKIN+" class="work-img">
+					        </a>
+
+					        <h3 class="work-h3"><a href="https://lp-shikinplus.bizforward.co.jp/" target="_blank">SHIKIN＋ LPページ</a></h3>
+
+				  			<h4 class="work-detail-head">制作内容</h4>
+				  			<p class="work-detail-txt">「SHIKIN+[資金プラス]の特長」、「ご利用の流れ」、「インターネットバンキング　明細連携スタート！」、「メディア掲載」のデザイン制作とコーディング。</p>
+
+
+				  			<h4 class="work-detail-head">使用ツール・言語</h4>
+				  			<p class="work-detail-txt">HTML, CSS, Photoshop</p>
+
+
+
+				        </div>
+				    	<div class="work-box">
+				            <a href="#">
+				            	<div class="work-img"></div>
+				            </a>
+				        </div>
+				        <div class="work-box">
+				            <a href="#">
+				            	<div class="work-img"></div>
+				            </a>
+				        </div>
+			    	</div>  
+			    </div>
+			</section>
+
+			<section class="sec-body">
+			    <div class="container">	
+			        <h2 id="profile">PROFILE</h2>
+			        <div class="profile-wrap">
+					    <div class="profile-img">
+					        <img src="#">
+					    </div>
+					    <div class="profile-txt">
+					    	<h3 class="h3-profile">ケロラ　由梨</h3>
+					    	<p>2010年に大学卒業後、主に営業事務や内勤営業を経験。<br>
+								その後、2016年にWebデザインのスクールに通い、2017年から現在までWebデザイナー・コーダーの仕事に従事。</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="sec-body">
+			    <div class="container">	
+			        <h2 id="contact">CONTACT</h2>
+				        <div class="contact-wrap">
+	    					<p class="t-center">ご連絡は下記メールアドレスにお送りください。<br><br>ご連絡先：　<a href="mailto:yurishi.design@gmail.com">yurishi.design@gmail.com</a></p>
+	    				</div>
+			    </div>
+			</section>
+
 
 		</main>
 
 		<footer>
 			<div class="coryright">
-				<p>&copy;Yuri's PORTFOLIO</p>
+				<p>&copy;YURI KEROLA PORTFOLIO</p>
 			</div>
 		</footer>
-	</div>
+	<!-- </div> -->
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 	<script src="js/jquery-ui.min.js"></script>
